@@ -27,12 +27,13 @@ void main() {
 
   citOffice office = citOffice();
 
-  office.betreten(person1);
-  office.betreten(person2);
+  office.enter(person1);
+  office.enter(person2);
 
-  office.ummelden(person1, Address("Wölferlingerstr.", 5, 65244, "Freilingen"));
+  office.reRegister(
+      person1, Address("Wölferlingerstr.", 5, 65244, "Freilingen"));
 
-  office.anzeigenAnwesende();
-  office.verlassen(person1);
-  office.anzeigenAnwesende();
+  office.showpresent();
+  office.exit(person1);
+  office.showpresent();
 }
