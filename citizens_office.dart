@@ -1,4 +1,5 @@
 import 'person.dart';
+import 'address.dart';
 
 class citOffice {
   List<Person> presentCitizens = [];
@@ -10,7 +11,7 @@ class citOffice {
 
   void betreten(Person citizens) {
     presentCitizens.add(citizens);
-    print("${citizens.name} hat Bürgerbüro das besucht.");
+    print("${citizens.name} hat das Bürgerbüro besucht.");
   }
 
   void verlassen(Person citizens) {
